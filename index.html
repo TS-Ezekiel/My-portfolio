@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="./assets/icons/Image Aug 28, 2026, 01_53_59 PM.png" alt="My Logo" class="logo-img">
+        </div>
+        <nav class="nav-links">
+            <a href="#">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-btn">
+            <!-- Custom Crescent Moon SVG Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#df934e" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm a <span class="highlight">Full-Stack Developer</span></h1>
+            <p>I build robust web applications, real-time monitoring dashboards, and scalable e-commerce platforms using modern JavaScript, Node.js, and MongoDB.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- DevPulse Project Card -->
+            <div class="project-card">
+                <h3>DevPulse</h3>
+                <!-- <img src="/client/assets/icons/a_sleek_stylized_3d_render_promotional_ui_mocku.png" alt="" width="400" height="250"> -->
+                <p>An interactive system monitoring dashboard tracking live API endpoints, services, and operational logs in real-time.</p>
+                <div class="tech-stack">
+                    <span>Node.js <img src="/client/assets/dev_svg_icons/nodejs.svg" alt="JavaScript" width="25" height="25"> </span><span>Express  <img src="/client/assets/dev_svg_icons/express.svg" alt="Express" width="25" height="25"> </span><span>MongoDB <img src="/client/assets/dev_svg_icons/mongodb.svg" alt="MongoDB" width="25" height="25"> </span><span>Netlify <img src="/client/assets/dev_svg_icons/netlify.svg" alt="Netlify" width="25" height="25"> </span><span>Railway <img src="/client/assets/dev_svg_icons/railway.svg" alt="Railway" width="25" height="25"> </span>
+                </div>
+                <div class="project-links">
+                    <a href="https://devpluseapp.netlify.app" target="_blank" class="link-btn">Live Demo</a>
+                </div>
+            </div>
+            <!-- GrandSlay Project Card -->
+            <div class="project-card">
+                <h3>GrandSlay Couture</h3>
+                <p>A full-stack e-commerce web application featuring traditional fashion collections and an integrated AI stylist interface.</p>
+                <div class="tech-stack">
+                    <span>JavaScript<img src="/client/assets/dev_svg_icons/javascript.svg" alt="JavaScript" width="25" height="25"> </span><span>Node.js <img src="/client/assets/dev_svg_icons/nodejs.svg" alt="Node" width="25" height="25"> </span><span>Express <img src="/client/assets/dev_svg_icons/express.svg" alt="Express" width="25" height="25"> </span><span>Mongoose <img src="/client/assets/dev_svg_icons/mongoose.svg" alt="Mongoose" width="25" height="25"></span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="link-btn">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Core Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>DOM Manipulation</li>
+                    <li>Responsive UI Design</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Database</h3>
+                <ul>
+                    <li>Node.js & Express</li>
+                    <li>RESTful APIs</li>
+                    <li>MongoDB & Mongoose</li>
+                    <li>Authentication & CORS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Cloud</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Netlify (Frontend Hosting)</li>
+                    <li>Railway (Backend Hosting)</li>
+                    <li>Figma UI Layouts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Let's Build Something Together</h2>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            <p id="form-status" class="form-status"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Full-Stack Developer Portfolio. Built with Node.js, Express, and MongoDB.</p>
+    </footer>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
